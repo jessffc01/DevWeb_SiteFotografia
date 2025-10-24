@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hwb(81 78% 0%);
+}
+.navbar {
+    font-family: Arial, sans-serif;
+    background-color: #002001;
+    padding: 10px 0;
+}
+a.nav-link {
+    margin: 0 15px;
+    color: white;
+}
+.conteudoindex {
+    max-width: 900px; /* Você pode testar 800px, 900px ou 1000px */
+    margin: 0 auto;   /* Centraliza na tela */
+    padding: 20px;    /* Espaço interno para respirar */
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.corpo {
+    flex: 1; /* Para o texto ocupar mais espaço */
+    text-align: left;
+}
+
+.imagemaboutme img {
+    width: 200px; /* ajuste conforme o desejado */
+    border-radius: 10px; /* opcional */
+}
+
+carrousel-inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.conteudoservicos {
+    padding: 20px;
+    text-align: left;
+}       
+.conteudocontato {
+    padding: 20px;
+    text-align: left;
+}
+.form-contratacao {
+    max-width: 600px; /* controla a largura total do formulário */
+    margin: 0 auto; /* centraliza na página */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* espaço entre os campos */
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.campo-form input,
+.campo-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #1d5702;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.btn-contratar {
+    background: #014b0e; /* Pode ajustar sua cor */
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.btn-contratar:hover {
+    opacity: 0.9;
+}
+
+.conteudoorcamento {
+    padding: 20px;
+    text-align: lefts;
+}
+.rodape {
+    background-color: hsl(122, 100%, 6%);  /* fundo escuro, opcional */
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between; /* esquerda/direita */
+    align-items: center;
+    flex-wrap: wrap; /* ajuda em telas pequenas */
+    margin-bottom: 10px;
+}
+
+.coluna {
+    flex: 1;
+}
+
+.endereco {
+    text-align: left;
+}
+
+.redes-sociais {
+    text-align: right;
+    padding-right: 25%;
+}
+
+.icone {
+    width: 50px;   /* deixa os ícones pequenos */
+    height: 50px;  /* mantém proporção */
+    margin-left: 10px;
+    vertical-align: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555; /* opcional, separa do conteúdo acima */
+    padding-top: 10px;
+    font-size: 14px;
+}
+    .map-container {
+      position: flex;
+      overflow: hidden;
+      width: 50%
+      padding-top: 56.25%; /* Proporção 16:9 (ajuste conforme necessário) */
+    }
+    .map-container iframe {
+      position: flex;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
