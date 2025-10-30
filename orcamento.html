@@ -26,7 +26,7 @@
 </div>
 <div class="conteudoorcamento">
   <P>Para solicitar seu orçamento, preencha o formulário abaixo:  </P>
-  <form action="" method="">
+  <form action="processa_orcamento.php" method="POST">
     <fieldset>
     <label for="nome">Nome:</label>
     <br>
@@ -43,14 +43,16 @@
     <label for="servico">Serviço:</label>
     <br>
     <select name="servico" required>
-      <option value="">Ensaio Casal</option>
-      <option value="">Ensaio Familia</option>
-      <option value="">Ensaio Feminino</option>
-      <option value="">Ensaio Executivo</option>
-      <option value="">Aniversário</option>
-      <option value="">Aniversário Infantil</option>
-      <option value="">Casamento</option>
-    </select><br>
+      <option value="Ensaio casal.pdf">Ensaio Casal</option>
+      <option value="Ensaio familia.pdf">Ensaio Família</option>
+      <option value="Ensaio Feminino.pdf">Ensaio Feminino</option>
+      <option value="Ensaio executivo.pdf">Ensaio Executivo</option>
+      <option value="Ensaio aniversário .pdf">Ensaio Aniversário</option>
+      <option value="Festa infantil.pdf">Festa Infantil</option>
+      <option value="Casamento.pdf">Casamento</option>
+      <option value="Batizado.pdf">Batizado</option>
+  </select>
+  <br>
     <input type="submit" value="Enviar">
     </fieldset>
   </form>
@@ -67,9 +69,9 @@
     </div>
     </div>
     <div class="coluna redes-sociais">
-      <a href="https://whats.link/jessicafcfotografias"><img src="/home/mint/Área de trabalho/devweb/1.png" alt="whatsapp" class="icone"></a>
-      <a href="https://www.instagram.com/jessicafcfotografias/"><img src="/home/mint/Área de trabalho/devweb/2.png" alt="instagram" class="icone"></a>
-      <a href="#"><img src="/home/mint/Área de trabalho/devweb/3.png" alt="facebook" class="icone"></a>           
+      <a href="https://whats.link/jessicafcfotografias"><img src="/var/www/html/devweb/1.png" alt="whatsapp" class="icone"></a>
+      <a href="https://www.instagram.com/jessicafcfotografias/"><img src="/var/www/html/devweb/2.png" alt="instagram" class="icone"></a>
+      <a href="#"><img src="/var/www/html/devweb/3.png" alt="facebook" class="icone"></a>           
     </div>
   </div>
 

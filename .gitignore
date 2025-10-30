@@ -1,0 +1,12 @@
+# Ignorar a pasta com credenciais
+config/
+
+# Ignorar arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Ignorar cache e configurações locais
+.vscode/
+.idea/
+.DS_Store
