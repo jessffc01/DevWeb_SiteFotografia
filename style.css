@@ -1,70 +1,109 @@
+:root {
+    --cor-principal: #014b0e;
+    --cor-secundaria: #002001;
+    --cor-fundo: hwb(81 78% 0%);
+    --cor-texto: #111;
+    --cor-branca: #fff;
+    --fonte-principal: 'Arial', sans-serif;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--fonte-principal);
     margin: 0;
     padding: 0;
-    background-color: hwb(81 78% 0%);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+
 .navbar {
-    font-family: Arial, sans-serif;
-    background-color: #002001;
-    padding: 10px 0;
+    background-color: var(--cor-secundaria);
+    padding: 12px 0;
+    text-align: center;
 }
+
 a.nav-link {
     margin: 0 15px;
-    color: white;
+    color: var(--cor-branca);
+    font-weight: 500;
+    transition: color 0.3s;
 }
+
+a.nav-link:hover {
+    color: #a7e09a;
+}
+
+
 .conteudoindex {
-    max-width: 900px; /* Você pode testar 800px, 900px ou 1000px */
-    margin: 0 auto;   /* Centraliza na tela */
-    padding: 20px;    /* Espaço interno para respirar */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+
 #carouselExampleAutoplaying {
-    max-width: 900px; /* largura máxima delicada */
-    margin: 30px auto; /* centraliza e dá respiro */
-    border-radius: 10px; /* cantinhos arredondados */
-    overflow: hidden; /* garante que bordas arredondadas funcionem */
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 #carouselExampleAutoplaying img {
-    height: 450px; /* altura do carrossel */
-    object-fit: cover; /* preenche sem distorcer */
+    height: 450px;
+    object-fit: cover;
 }
+
 
 .sobre-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .corpo {
-    flex: 1; /* Para o texto ocupar mais espaço */
+    flex: 1;
     text-align: left;
 }
 
 .imagemaboutme img {
-    width: 300px; /* ajuste conforme o desejado */
-    border-radius: 50%; /* opcional */
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-carrousel-inner {
+
+.conteudoservicos,
+.conteudocontato,
+.conteudoorcamento {
+    padding: 20px;
+    text-align: left;
+}
+
+
+.form-contratacao {
     max-width: 600px;
     margin: 0 auto;
-}
-.conteudoservicos {
-    padding: 20px;
-    text-align: left;
-}       
-.conteudocontato {
-    padding: 20px;
-    text-align: left;
-}
-.form-contratacao {
-    max-width: 600px; /* controla a largura total do formulário */
-    margin: 0 auto; /* centraliza na página */
     display: flex;
     flex-direction: column;
-    gap: 15px; /* espaço entre os campos */
+    gap: 15px;
+    background: var(--cor-branca);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .campo-form {
@@ -81,8 +120,15 @@ carrousel-inner {
 .campo-form textarea {
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #1d5702;
+    border: 1px solid var(--cor-principal);
     border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.campo-form input:focus,
+.campo-form textarea:focus {
+    border-color: #037d17;
 }
 
 textarea {
@@ -90,40 +136,41 @@ textarea {
 }
 
 .btn-contratar {
-    background: #014b0e; /* Pode ajustar sua cor */
-    color: #fff;
+    margin-bottom: 80px;
+    background: var(--cor-principal);
+    color: var(--cor-branca);
     padding: 12px;
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 .btn-contratar:hover {
-    opacity: 0.9;
+    background: #026d15;
 }
 
-.conteudoorcamento {
-    padding: 20px;
-    text-align: lefts;
-}
+
 .rodape {
-    background-color: hsl(122, 100%, 6%);  /* fundo escuro, opcional */
-    color: white;
+    background-color: hsl(122, 100%, 6%);
+    color: var(--cor-branca);
     padding: 20px;
-    font-family: Arial, sans-serif;
+    font-family: var(--fonte-principal);
 }
 
 .footer-top {
     display: flex;
-    justify-content: space-between; /* esquerda/direita */
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* ajuda em telas pequenas */
+    flex-wrap: wrap;
     margin-bottom: 10px;
+    gap: 20px;
 }
 
 .coluna {
     flex: 1;
+    min-width: 200px;
 }
 
 .endereco {
@@ -132,33 +179,66 @@ textarea {
 
 .redes-sociais {
     text-align: right;
-    padding-right: 25%;
+    padding-right: 15%;
 }
 
 .icone {
-    width: 50px;   /* deixa os ícones pequenos */
-    height: 50px;  /* mantém proporção */
+    width: 40px;
+    height: 40px;
     margin-left: 10px;
-    vertical-align: center;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+.icone:hover {
+    transform: scale(1.1);
 }
 
 .footer-bottom {
     text-align: center;
-    border-top: 1px solid #555; /* opcional, separa do conteúdo acima */
+    border-top: 1px solid #555;
     padding-top: 10px;
     font-size: 14px;
 }
-    .map-container {
-      position: flex;
-      overflow: hidden;
-      width: 50%
-      padding-top: 56.25%; /* Proporção 16:9 (ajuste conforme necessário) */
+
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
     }
-    .map-container iframe {
-      position: flex;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
+
+    .imagemaboutme img {
+        width: 200px;
     }
+
+    .redes-sociais {
+        text-align: center;
+        padding: 0;
+    }
+
+    a.nav-link {
+        display: inline-block;
+        margin: 8px;
+    }
+}
