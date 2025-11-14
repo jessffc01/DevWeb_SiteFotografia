@@ -13,10 +13,24 @@ a.nav-link {
     margin: 0 15px;
     color: white;
 }
+#login {
+    /*O login deve ficar a direita, no cantinho.*/
+}
 .conteudoindex {
     max-width: 900px; /* Você pode testar 800px, 900px ou 1000px */
     margin: 0 auto;   /* Centraliza na tela */
     padding: 20px;    /* Espaço interno para respirar */
+}
+#carouselExampleAutoplaying {
+    max-width: 900px; /* largura máxima delicada */
+    margin: 30px auto; /* centraliza e dá respiro */
+    border-radius: 10px; /* cantinhos arredondados */
+    overflow: hidden; /* garante que bordas arredondadas funcionem */
+}
+
+#carouselExampleAutoplaying img {
+    height: 450px; /* altura do carrossel */
+    object-fit: cover; /* preenche sem distorcer */
 }
 
 .sobre-container {
@@ -32,8 +46,8 @@ a.nav-link {
 }
 
 .imagemaboutme img {
-    width: 200px; /* ajuste conforme o desejado */
-    border-radius: 10px; /* opcional */
+    width: 300px; /* ajuste conforme o desejado */
+    border-radius: 50%; /* opcional */
 }
 
 carrousel-inner {
