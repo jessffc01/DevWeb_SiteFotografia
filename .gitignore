@@ -1,5 +1,6 @@
-# Ignorar a pasta com credenciais
-config/
+# ARQUIVOS SENSÍVEIS - NUNCA NO GIT
+config/env.php    # ✅ SÓ ESTE ARQUIVO (tem senhas)
+*.env
 
 # Ignorar arquivos temporários
 *.log
